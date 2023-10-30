@@ -1,3 +1,11 @@
+# Project goals
+
+This project compares the performance of the solidity benchmark among various options of the solc-compiler optimizer. Based on this, a frequently used optimizer setting is selected as a baseline, and the reason for this is analysed.
+
+The soldity benchmarks are ERC20 and ERC721, which are commonly used.
+
+The optimiser options were selected by referring to https://docs.soliditylang.org/en/v0.8.20/using-the-compiler.html#input-description.
+
 # Test case
 
 | Case    | runs | jumpdestRemover | orderLiterals | cse      | deduplicate | Comments                         |
@@ -121,3 +129,7 @@
 | ERC20_TEST18 | mint         | 33662 |
 | ERC20_TEST18 | transfer     | 51945 |
 | ERC20_TEST18 | transferFrom | 36352 |
+
+# Reference
+
+[solc compiler option setting](https://docs.soliditylang.org/en/v0.8.20/using-the-compiler.html#input-description)
